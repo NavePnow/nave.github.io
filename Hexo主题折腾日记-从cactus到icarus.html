@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Hexo主题折腾日记(一) 从cactus到icarus - It Ain&#39;t me</title>
+
+
+    <meta name="description" content="前言从Hexo建站开始，一直是使用的cactus主题，很喜欢那种简约的风格，主页文章预览的都没有的那一种。">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题折腾日记(一) 从cactus到icarus">
+<meta property="og:url" content="https:&#x2F;&#x2F;nave.work&#x2F;Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html">
+<meta property="og:site_name" content="It Ain&#39;t me">
+<meta property="og:description" content="前言从Hexo建站开始，一直是使用的cactus主题，很喜欢那种简约的风格，主页文章预览的都没有的那一种。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;images.unsplash.com&#x2F;photo-1486312338219-ce68d2c6f44d?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;900&amp;q&#x3D;60">
+<meta property="og:updated_time" content="2020-04-01T18:22:39.313Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;images.unsplash.com&#x2F;photo-1486312338219-ce68d2c6f44d?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;900&amp;q&#x3D;60">
+
+
+
+
+
+<link rel="alternative" href="https://navepnow.github.io/atom.xml" title="Hexo主题折腾日记(一) 从cactus到icarus" type="application/atom+xml">
+
+
+
+<link rel="icon" href="/images/favicon1.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145418865-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145418865-1');
+</script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+<script src="/js/globalUtils.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.png" alt="Hexo主题折腾日记(一) 从cactus到icarus" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">Home</a>
+                
+                <a class="navbar-item"
+                href="/about">About</a>
+                
+                <a class="navbar-item"
+                href="/archives">Articles</a>
+                
+                <a class="navbar-item"
+                href="/gallery">Gallery</a>
+                
+                <a class="navbar-item"
+                href="/books">Books</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                <a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;" target="_blank" onclick='return false;'>
+                                    <i class="fas fa-moon" id="night-icon"></i>
+                </a>
+                
+                <a class="navbar-item search" title="Search" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    <script type="text/javascript" src="/js/theme-setting.js"></script>
+     
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" alt="Hexo主题折腾日记(一) 从cactus到icarus">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                
+                <time class="level-item has-text-grey" datetime="2019-11-16T02:59:11.000Z">2019-11-16</time>
+                
+                
+                    
+                    <span class="level-item has-text-grey">
+                        
+                        
+                        10 minutes read (About 1569 words)
+                    </span>
+                
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Hexo主题折腾日记(一) 从cactus到icarus
+            
+        </h1>
+        <div class="content">
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>从Hexo建站开始，一直是使用的cactus主题，很喜欢那种简约的风格，主页文章预览的都没有的那一种。<a id="more"></a></p>
+<center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-16 11:11:11.jpg" height="60%" width="60%">
+</center>
+
+<p>直到昨天心血来潮想搞一个基于ghost的动态博客，同时爱上了他的默认主题casper，心想这不就是我梦寐已久的主题么，结果搜了很多的资料，发现个人维护的建站工具都是至少1年以上的，有一个基于 python 可以通过ghost部署到github pags上的工具还是基于2.7,我直接裂开，最终直接放弃了这套方案，回过头来想能不能把casper移植到hexo上呢，在github上也搜到了相应的项目，但效果emmm，不是特别能让我满意，贴一张demo供大家参考。</p>
+<center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-16 11:10:20.jpg" height="60%" width="60%">
+</center>
+
+<p>主要还是插件的支持度没有成熟主题的高，然后就又开始google: hexo主题推荐2019类似的关键词，终于发现了这个模版，icarus，没有cactus那么朴素，插件支持度和commit活跃度也比hexo-casper高，所以昨天花了很长很长的时间调整网页布局和文章渲染问题，最终效果我打9分吧，因为还有一点问题没有解决，等写完这个博客我再搞，下面主要把我基于别人修改的模版和自己修改的内容做一下总结，以免以后git pull之后不知道自己做了哪些修改。</p>
+<h1 id="icarus主题之上主要改动"><a href="#icarus主题之上主要改动" class="headerlink" title="icarus主题之上主要改动"></a>icarus主题之上主要改动</h1><ol>
+<li>主页显示两栏widget，文章只显示左边widget</li>
+<li>文章图片居中</li>
+<li>增加profile下面的 bio, 可以放一点自己想说的话</li>
+<li>置顶文章</li>
+<li>文章底部文章详细信息显示以及推荐文章模块配置</li>
+<li>页脚访问人数显示修改</li>
+</ol>
+<h2 id="主页显示两栏widget，文章只显示左边widget"><a href="#主页显示两栏widget，文章只显示左边widget" class="headerlink" title="主页显示两栏widget，文章只显示左边widget"></a>主页显示两栏widget，文章只显示左边widget</h2><p>主要参考 <a href="https://dp2px.com/2019/06/04/icarus-theme/" target="_blank" rel="noopener">水寒blog</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ol>
+<li><p>修改 /includes/helpers/layout.js</p>
+ <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo.extend.helper.register('column_count', function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> let columns = 1;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        if (this.page.__post === true || this.page.__page === true) &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+            return 2;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">const hasColumn = hexo.extend.helper.get('has_column').bind(this);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">columns += hasColumn('left') ? 1 : 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">columns += hasColumn('right') ? 1 : 0;</span></pre></td></tr></table></figure>
+</li>
+<li><p>修改 /layout/common/widget.ejs</p>
+ <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;%- partial('widget/' + widget.type, &#123; widget, post: page &#125;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;% &#125;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;% if (position <span class="hljs-comment">=== 'left') &#123; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-        &lt;div class="column-right-shadow is-hidden-widescreen &lt;%= sticky_class('right') %&gt;"&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        &lt;div class="column-right-shadow &lt;%= (page.__page !== true &amp;&amp; page.__post !== true) ? 'is-hidden-widescreen' : '' %&gt; &lt;%= sticky_class('right') %&gt;"&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> &lt;% get_widgets('right').forEach(widget =&gt; &#123;%&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">     &lt;%- partial('widget/' + widget.type, &#123; widget, post: page &#125;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> &lt;% &#125;) %&gt;</span></pre></td></tr></table></figure></li>
+<li><p>修改 /layout/layout.ejs</p>
+ <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"> &lt;div class="columns"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">         &lt;div class="column &lt;%= main_column_class() %&gt; has-order-2 column-main"&gt;&lt;%- body %&gt;&lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">         &lt;%- partial('common/widget', &#123; position: 'left' &#125;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+                &lt;% if (page.__page !== true &amp;&amp; page.__post !== true) &#123; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">         &lt;%- partial('common/widget', &#123; position: 'right' &#125;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+                &lt;% &#125; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">     &lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> &lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> &lt;/section&gt;</span></pre></td></tr></table></figure>
+</li>
+<li><p>修改 /source/css/style.styl </p>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media screen and (min-width: screen-widescreen)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    .is-1-column .container</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    .is-2-column .container</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        max-width: screen-widescreen - 2 * gap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        width: screen-widescreen - 2 * gap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">@media screen and (min-width: screen-fullhd)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    .is-2-column .container</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        max-width: screen-fullhd - 2 * gap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        width: screen-fullhd - 2 * gap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    .is-1-column .container</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        max-width: screen-desktop - 2 * gap</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        width: screen-desktop - 2 * gapp</span></pre></td></tr></table></figure>
+</li>
+<li><p>修改 /layout/layout.ejs</p>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"> &lt;% function main_column_class() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">switch (column_count()) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    case 1:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        return &#39;is-12&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    case 2:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        return &#39;is-8-tablet is-9-desktop is-9-widescreen&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    case 3:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        return &#39;is-8-tablet is-8-desktop is-6-widescreen&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">return &#39;&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#125; %&gt;</span></pre></td></tr></table></figure></li>
+<li><p>修改 /layout/common/widget.ejs</p>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;% function side_column_class() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">switch (column_count()) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">case 2:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    return &#39;is-4-tablet is-3-desktop is-3-widescreen&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">case 3:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    return &#39;is-4-tablet is-4-desktop is-3-widescreen&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">return &#39;&#39;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125; %&gt;</span></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="文章图片居中"><a href="#文章图片居中" class="headerlink" title="文章图片居中"></a>文章图片居中</h2><p>最开始尝试了修改 source/js/main.js 和 layout/css/style.styl , 修改的内容也是基于水寒的博客，本地 hexo server没有问题，但是 hexo g -d 之后就总是出问题，最后还是老老实实<br>    <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;center&gt; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;center&gt;</span></pre></td></tr></table></figure></p>
+<h2 id="增加profile下面的-bio-可以放一点自己想说的话"><a href="#增加profile下面的-bio-可以放一点自己想说的话" class="headerlink" title="增加profile下面的 bio, 可以放一点自己想说的话"></a>增加profile下面的 bio, 可以放一点自己想说的话</h2><h3 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h3><center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/screenshot 2019-11-16 at 11.47.59.png" height="40%" width="40%">
+</center>
+
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>修改 /layout/widget/profile.ejs, 在最后加上你想说的话<br>    <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">        &lt;% &#125; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    &lt;% &#125; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        &lt;hr&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        &lt;p id="evan"&gt;修子也好，远野也好，对于情感世界发生的事，很难简单以对和错来衡量，在这样的世界里沉浮，飘落的是情感，不败的总是每年盛开的樱花。    --《情人》&lt;/p&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&lt;/div&gt;</span></pre></td></tr></table></figure></p>
+<h2 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h2><p>参考文章: <code>https://removeif.github.io/2019/09/19/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html#more</code></p>
+<p><a href="https://github.com/removeif/hexo-theme-icarus-removeif/commit/a924e02916607ed351904e4833c541199807482d" target="_blank" rel="noopener">github commit history</a></p>
+<h3 id="实现效果-1"><a href="#实现效果-1" class="headerlink" title="实现效果"></a>实现效果</h3><center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/screenshot 2019-11-16 at 13.30.30.png" height="40%" width="40%">
+</center>
+
+<h3 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h3><p>在每篇文章的top comment部分配置top字段，初始值是100，如果要置顶，需要设置为大于100的值，值越大越靠前。相等时，根据时间降序。具体设置如下<br>    <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">title: 一亩三分地自动签到脚本</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">top: 102</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">toc: true</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">recommend: 1 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">date: 2019-09-19 22:10:43</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">thumbnail: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;removeif&#x2F;blog_image&#x2F;img&#x2F;2019&#x2F;20190919221611.png</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">tags: </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">categories:</span></pre></td></tr></table></figure></p>
+<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><p>修改 /layout/common/article.ejs<br>    <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;% if (post.layout != 'page') &#123; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    &lt;div class="level-left"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+       &lt;% if(post.top &gt; 100) &#123; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+       &lt;div class="level-item tag is-danger" style="background-color: #3273dc;"&gt;Pin&lt;/div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+       &lt;%&#125; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        &lt;time class="level-item has-text-grey" datetime="&lt;%= date_xml(post.date) %&gt;"&gt;&lt;%= date(post.date) %&gt;&lt;/time&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        &lt;% if (post.categories &amp;&amp; post.categories.length) &#123; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        &lt;div class="level-item"&gt;</span></pre></td></tr></table></figure></p>
+<h2 id="文章底部文章详细信息显示以及推荐文章模块配置"><a href="#文章底部文章详细信息显示以及推荐文章模块配置" class="headerlink" title="文章底部文章详细信息显示以及推荐文章模块配置"></a>文章底部文章详细信息显示以及推荐文章模块配置</h2><p>参考文章: <code>https://removeif.github.io/2019/09/19/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html#more</code></p>
+<p><a href="https://github.com/removeif/hexo-theme-icarus-removeif/commit/8fb8c23b8e3861fd56aa983f3eac8b0dbe18162d" target="_blank" rel="noopener">github commit history</a></p>
+<h3 id="实现效果-2"><a href="#实现效果-2" class="headerlink" title="实现效果"></a>实现效果</h3><center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/screenshot 2019-11-16 at 11.59.42.png" height="80%" width="80%">
+</center>
+
+<h3 id="使用说明-1"><a href="#使用说明-1" class="headerlink" title="使用说明"></a>使用说明</h3><p>在每篇文章的top comment部分配置recommend值（必须大于0），越大越靠前，相等取最新的，最多取5条。具体设置如下<br>    <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">title: 一亩三分地自动签到脚本</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">top: 102</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">toc: true</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">recommend: 1 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">date: 2019-09-19 22:10:43</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">thumbnail: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;removeif&#x2F;blog_image&#x2F;img&#x2F;2019&#x2F;20190919221611.png</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">tags: </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">categories:</span></pre></td></tr></table></figure></p>
+<h3 id="配置-3"><a href="#配置-3" class="headerlink" title="配置"></a>配置</h3><ol>
+<li><p>在 languages/xx.yml 中插入 recommend_posts，具体如下</p>
+ <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">widget:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    follow: 'Follow'</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    recents: 'Recent'</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+   recommend_posts: 'Recommend Posts'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    links: 'Links'</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    tag_cloud: 'Tag Cloud'</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    catalogue: 'Catalogue'</span></pre></td></tr></table></figure>
+<p>注意所使用的语言所对应的文件</p>
+</li>
+<li><p>修改 /layout/common/article.ejs </p>
+ <figure class="highlight diff hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div class="level-start"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &lt;div class="level-item"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-deletion">-        &lt;span class="is-size-6 has-text-grey has-mr-7"&gt;#&lt;/span&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+        &lt;i class="fas fa-tags has-text-grey"&gt;&lt;/i&gt;&amp;nbsp;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        &lt;%- list_tags(post.tags, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            class: 'has-link-grey ',</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">            show_count: false,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">..........</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+ &lt;!-- 部分参考自https://www.alphalxy.com/2019/03/customize-icarus/ --&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+ &lt;% if (!index &amp;&amp; post.layout === 'post' &amp;&amp; post.copyright !== false) &#123; %&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    + &lt;ul class="post-copyright"&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">    + &lt;li&gt;&lt;strong&gt;本文标题：&lt;/strong&gt;&lt;a href="&lt;%= post.permalink %&gt;"&gt;&lt;%= page.title %&gt;&lt;/a&gt;&lt;/li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    + &lt;li&gt;&lt;strong&gt;本文作者：&lt;/strong&gt;&lt;a href="&lt;%= theme.url %&gt;"&gt;&lt;%= theme.author %&gt;&lt;/a&gt;&lt;/li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">    + &lt;li&gt;&lt;strong&gt;本文链接：&lt;/strong&gt;&lt;a href="&lt;%= post.permalink %&gt;"&gt;&lt;%= post.permalink %&gt;&lt;/a&gt;&lt;/li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    + &lt;li&gt;&lt;strong&gt;版权声明：&lt;/strong&gt;本博客所有文章除特别声明外，均采用 &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank"&gt;CC BY-NC-SA 4.0&lt;/a&gt; 许可协议。转载请注明出处！</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    + &lt;/li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    + &lt;/ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">    + &lt;br&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">    + &lt;%- _partial('widget/recommend_posts') %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">   + &lt;br&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+ br&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"> + %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">&lt;% if (!index &amp;&amp; has_config('share.type')) &#123; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">&lt;%- _partial('share/' + get_config('share.type')) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span></pre></td></tr></table></figure>
+</li>
+<li><p>/layout/widget 目录下添加 recommend_posts.ejs </p>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;span class&#x3D;&quot;is-size-6 has-text-grey has-mr-7&quot;&gt;#&amp;nbsp;&lt;%&#x3D; __(&#39;widget.recommend_posts&#39;) %&gt;&lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;br&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;% var i &#x3D; 1;posts.forEach(post &#x3D;&gt; &#123; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&amp;nbsp;&lt;%&#x3D;i %&gt;.&lt;a href&#x3D;&quot;&lt;%- url_for((post.link?post.link:post.path)) %&gt;&quot; class&#x3D;&quot;is-size-6&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;%&#x3D; post.title %&gt;&lt;&#x2F;a&gt;&lt;br&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;% i++;&#125;) %&gt;</span></pre></td></tr></table></figure>
+</li>
+<li><p>/layout/widget 目录下添加 recommend_posts.locals.js</p>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; (ctx, locals) &#x3D;&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">const &#123; has_config, get_config, get_thumbnail &#125; &#x3D; ctx;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">const &#123; posts &#125; &#x3D; ctx.site;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">if (!posts.length) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">return null;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">const thumbnail &#x3D; !has_config(&#39;article.thumbnail&#39;) || get_config(&#39;article.thumbnail&#39;) !&#x3D;&#x3D; false;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">const _posts &#x3D; posts.filter((item, index, arr) &#x3D;&gt; item.recommend !&#x3D; undefined &amp;&amp; item.recommend &gt; 0).sort(&#39;recommend&#39;,-1).sort(&#39;recommend&#39;,-1).limit(5).map(post &#x3D;&gt; (&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">link: post.link,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">path: post.path,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">title: post.title,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">date: post.date,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">thumbnail: thumbnail ? get_thumbnail(post) : null,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; fix circular JSON serialization issue</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">categories: () &#x3D;&gt; post.categories</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">return Object.assign(locals, &#123; thumbnail, posts: _posts &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="页脚访问人数显示修改"><a href="#页脚访问人数显示修改" class="headerlink" title="页脚访问人数显示修改"></a>页脚访问人数显示修改</h2><h3 id="实现效果-3"><a href="#实现效果-3" class="headerlink" title="实现效果"></a>实现效果</h3><center>
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/screenshot 2019-11-17 at 18.25.58.png">
+</center>
+
+<h3 id="配置-4"><a href="#配置-4" class="headerlink" title="配置"></a>配置</h3><p>修改 /layout/common/footer.ejs 卜算子部分.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;% if (busuanzi) &#123; %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">                &lt;br&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">                &lt;span id&#x3D;&quot;busuanzi_container_site_uv&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">                &lt;!-- &lt;%- _p(&#39;plugin.visitor&#39;, &#39;&lt;span id&#x3D;&quot;busuanzi_value_site_uv&quot;&gt;0&lt;&#x2F;span&gt;&#39;) %&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">                &lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">                &lt;br&gt; --&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">                &lt;span id&#x3D;&quot;busuanzi_container_site_pv&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">                    Visited by &lt;span id&#x3D;&quot;busuanzi_value_site_uv&quot;&gt;&lt;&#x2F;span&gt; users with &lt;span id&#x3D;&quot;busuanzi_value_site_pv&quot;&gt;&lt;&#x2F;span&gt; times</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">                &lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">                &lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">                &lt;% &#125; %&gt;</span></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
+                    <a class="has-link-grey -link" href="/tags/JavaScript/" rel="tag">JavaScript</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- 部分参考自https://www.alphalxy.com/2019/03/customize-icarus/ -->
+        
+            <ul class="post-copyright">
+            <li><strong>本文标题：</strong><a href="https://nave.work/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html">Hexo主题折腾日记(一) 从cactus到icarus</a></li>
+            <li><strong>本文作者：</strong><a href="https://nave.work">Wong Evan</a></li>
+            <li><strong>本文链接：</strong><a href="https://nave.work/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html">https://nave.work/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html</a></li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC 4.0</a> 许可协议。转载请注明出处！
+            </li>
+            </ul>
+            <br>
+            <span class="is-size-6 has-text-grey has-mr-7">#&nbsp;Recommend Posts</span>
+<br>
+
+    &nbsp;1.<a href="/1-1-2019%20-%2012-31-2019%20-%202.html" class="is-size-6" target="_blank">1/1/2019 - 12/31/2019</a><br>
+
+    &nbsp;2.<a href="/1-1-2019%20-%2012-31-2019.html" class="is-size-6" target="_blank">1/1/2019 - 12/31/2019</a><br>
+
+    &nbsp;3.<a href="/82%20%E5%B9%B4%E7%94%9F%E7%9A%84%E9%87%91%E6%99%BA%E8%8B%B1.html" class="is-size-6" target="_blank">82 年生的金智英</a><br>
+
+    &nbsp;4.<a href="/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BA%8C-%E6%B7%BB%E5%8A%A0%E8%B1%86%E7%93%A3%E5%92%8C%E8%81%8A%E5%A4%A9%E6%8F%92%E4%BB%B6.html" class="is-size-6" target="_blank">Hexo主题折腾日记(二) 添加豆瓣和聊天插件</a><br>
+
+    &nbsp;5.<a href="/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html" class="is-size-6" target="_blank">Hexo主题折腾日记(一) 从cactus到icarus</a><br>
+
+            <br>
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5dce993f5619c300129aeaa0&amp;product=inline-share-buttons&amp;cms=sop' async='async'></script>
+
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/1234.JPG" alt="Wechat"></div>
+</a>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<a class="button is-warning donate" onclick="document.getElementById(&#39;paypal-donate-form&#39;).submit()">
+    <span class="icon is-small">
+        <i class="fab fa-paypal"></i>
+    </span>
+    <span>Paypal</span>
+</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-donate-form">
+    <input type="hidden" name="cmd" value="_donations" />
+    <input type="hidden" name="business" value="evan.wong.stu@gmail.com" />
+    <input type="hidden" name="currency_code" value="USD" />
+</form>
+
+                
+                
+<a class="button is-danger donate" href="https://www.patreon.com/navepnow" target="_blank">
+    <span class="icon is-small">
+        <i class="fab fa-patreon"></i>
+    </span>
+    <span>Patreon</span>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BA%8C-%E6%B7%BB%E5%8A%A0%E8%B1%86%E7%93%A3%E5%92%8C%E8%81%8A%E5%A4%A9%E6%8F%92%E4%BB%B6.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Hexo主题折腾日记(二) 添加豆瓣和聊天插件</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/%E4%B8%80%E4%BA%A9%E4%B8%89%E5%88%86%E5%9C%B0%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html">
+                <span class="level-item">一亩三分地自动签到脚本</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://nave.work/Hexo%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0-%E4%BB%8Ecactus%E5%88%B0icarus.html';
+        this.page.identifier = 'Hexo主题折腾日记-从cactus到icarus.html';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'owtpnow' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
+</div>
+                
+        
+
+
+
+
+<div class="column is-4-tablet is-3-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="is-rounded" src="https://www.gravatar.com/avatar/3a923126d97f89b4beadcf109cbddc11?s=128" alt="Evan">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        Evan
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Drunkard
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Taiwan</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            39
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            5
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://twitter.com/darrenlepe" target="_blank">
+                Follow</a>
+        </div>
+        
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Telegram" href="https://t.me/Leped_Bot">
+                
+                <i class="fab fa-telegram"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Github" href="https://github.com/NavePnow">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Medium" href="https://medium.com/@owtpnow">
+                
+                <i class="fab fa-medium"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="RSS" href="https://navepnow.github.io/atom.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Email" href="mailto:help@evanwong.org">
+                
+                <i class="fa fa-envelope"></i>
+                
+            </a>
+            
+        </div>
+        
+        <hr>
+        <p id="evan">修子也好，远野也好，对于情感世界发生的事，很难简单以对和错来衡量，在这样的世界里沉浮，飘落的是情感，不败的总是每年盛开的樱花。    --《情人》</p>
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    Catalogue
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#前言">
+        <span class="has-mr-6">1</span>
+        <span>前言</span>
+        </a></li><li>
+        <a class="is-flex" href="#icarus主题之上主要改动">
+        <span class="has-mr-6">2</span>
+        <span>icarus主题之上主要改动</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#主页显示两栏widget，文章只显示左边widget">
+        <span class="has-mr-6">2.1</span>
+        <span>主页显示两栏widget，文章只显示左边widget</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#配置">
+        <span class="has-mr-6">2.1.1</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#文章图片居中">
+        <span class="has-mr-6">2.2</span>
+        <span>文章图片居中</span>
+        </a></li><li>
+        <a class="is-flex" href="#增加profile下面的-bio-可以放一点自己想说的话">
+        <span class="has-mr-6">2.3</span>
+        <span>增加profile下面的 bio, 可以放一点自己想说的话</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果">
+        <span class="has-mr-6">2.3.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-1">
+        <span class="has-mr-6">2.3.2</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#置顶文章">
+        <span class="has-mr-6">2.4</span>
+        <span>置顶文章</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-1">
+        <span class="has-mr-6">2.4.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#使用说明">
+        <span class="has-mr-6">2.4.2</span>
+        <span>使用说明</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-2">
+        <span class="has-mr-6">2.4.3</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#文章底部文章详细信息显示以及推荐文章模块配置">
+        <span class="has-mr-6">2.5</span>
+        <span>文章底部文章详细信息显示以及推荐文章模块配置</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-2">
+        <span class="has-mr-6">2.5.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#使用说明-1">
+        <span class="has-mr-6">2.5.2</span>
+        <span>使用说明</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-3">
+        <span class="has-mr-6">2.5.3</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#页脚访问人数显示修改">
+        <span class="has-mr-6">2.6</span>
+        <span>页脚访问人数显示修改</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-3">
+        <span class="has-mr-6">2.6.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-4">
+        <span class="has-mr-6">2.6.2</span>
+        <span>配置</span>
+        </a></li></ul></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Links
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://t.me/Leped_Channel" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">TG_Channel</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">t.me</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/Distributed-System/">
+            <span class="level-start">
+                <span class="level-item">Distributed System</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/FakeNews/">
+            <span class="level-start">
+                <span class="level-item">FakeNews</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/MARL/">
+            <span class="level-start">
+                <span class="level-item">MARL</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E6%97%A7%E7%9A%84%E6%96%87/">
+            <span class="level-start">
+                <span class="level-item">旧的文</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">14</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E6%97%A7%E7%9A%84%E6%A2%A6/">
+            <span class="level-start">
+                <span class="level-item">旧的梦</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">6</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/NLP/" style="font-size: 16.67px;">NLP</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/RL/" style="font-size: 10px;">RL</a>
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    Catalogue
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#前言">
+        <span class="has-mr-6">1</span>
+        <span>前言</span>
+        </a></li><li>
+        <a class="is-flex" href="#icarus主题之上主要改动">
+        <span class="has-mr-6">2</span>
+        <span>icarus主题之上主要改动</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#主页显示两栏widget，文章只显示左边widget">
+        <span class="has-mr-6">2.1</span>
+        <span>主页显示两栏widget，文章只显示左边widget</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#配置">
+        <span class="has-mr-6">2.1.1</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#文章图片居中">
+        <span class="has-mr-6">2.2</span>
+        <span>文章图片居中</span>
+        </a></li><li>
+        <a class="is-flex" href="#增加profile下面的-bio-可以放一点自己想说的话">
+        <span class="has-mr-6">2.3</span>
+        <span>增加profile下面的 bio, 可以放一点自己想说的话</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果">
+        <span class="has-mr-6">2.3.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-1">
+        <span class="has-mr-6">2.3.2</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#置顶文章">
+        <span class="has-mr-6">2.4</span>
+        <span>置顶文章</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-1">
+        <span class="has-mr-6">2.4.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#使用说明">
+        <span class="has-mr-6">2.4.2</span>
+        <span>使用说明</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-2">
+        <span class="has-mr-6">2.4.3</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#文章底部文章详细信息显示以及推荐文章模块配置">
+        <span class="has-mr-6">2.5</span>
+        <span>文章底部文章详细信息显示以及推荐文章模块配置</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-2">
+        <span class="has-mr-6">2.5.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#使用说明-1">
+        <span class="has-mr-6">2.5.2</span>
+        <span>使用说明</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-3">
+        <span class="has-mr-6">2.5.3</span>
+        <span>配置</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#页脚访问人数显示修改">
+        <span class="has-mr-6">2.6</span>
+        <span>页脚访问人数显示修改</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实现效果-3">
+        <span class="has-mr-6">2.6.1</span>
+        <span>实现效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置-4">
+        <span class="has-mr-6">2.6.2</span>
+        <span>配置</span>
+        </a></li></ul></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+        <div class="column-right-shadow  ">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%94-3D%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="分布式计算学习笔记(五) 3D图像分类任务">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-18T11:22:27.000Z">2020-02-18</time></div>
+                    <a href="/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%94-3D%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E4%BB%BB%E5%8A%A1.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">分布式计算学习笔记(五) 3D图像分类任务</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Distributed-System/">Distributed System</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Ray%20%E5%AE%9E%E6%88%98%20--%20%E5%B0%86CNN%E7%BD%91%E7%BB%9C%E6%94%B9%E5%86%99%E6%88%90%20Ray.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="分布式计算学习笔记(四) Ray 实战 -- 将CNN网络改写成 Ray">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-05T03:01:35.000Z">2020-02-05</time></div>
+                    <a href="/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Ray%20%E5%AE%9E%E6%88%98%20--%20%E5%B0%86CNN%E7%BD%91%E7%BB%9C%E6%94%B9%E5%86%99%E6%88%90%20Ray.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">分布式计算学习笔记(四) Ray 实战 -- 将CNN网络改写成 Ray</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Distributed-System/">Distributed System</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/82%20%E5%B9%B4%E7%94%9F%E7%9A%84%E9%87%91%E6%99%BA%E8%8B%B1.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2700&amp;q=80" alt="82 年生的金智英">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-28T16:31:39.000Z">2020-01-29</time></div>
+                    <a href="/82%20%E5%B9%B4%E7%94%9F%E7%9A%84%E9%87%91%E6%99%BA%E8%8B%B1.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">82 年生的金智英</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%97%A7%E7%9A%84%E6%96%87/">旧的文</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/1-1-2019%20-%2012-31-2019%20-%202.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2550&amp;q=80" alt="1/1/2019 - 12/31/2019">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T15:20:23.000Z">2019-12-31</time></div>
+                    <a href="/1-1-2019%20-%2012-31-2019%20-%202.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">1/1/2019 - 12/31/2019</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%97%A7%E7%9A%84%E6%96%87/">旧的文</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/1-1-2019%20-%2012-31-2019.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2550&amp;q=80" alt="1/1/2019 - 12/31/2019">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T15:20:23.000Z">2019-12-31</time></div>
+                    <a href="/1-1-2019%20-%2012-31-2019.html" class="title has-link-black-ter is-size-6 has-text-weight-normal">1/1/2019 - 12/31/2019</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%97%A7%E7%9A%84%E6%96%87/">旧的文</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/02/">
+                <span class="level-start">
+                    <span class="level-item">February 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">January 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">November 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">3</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">11</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">5</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/NLP/">
+                        <span class="tag">NLP</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Python/">
+                        <span class="tag">Python</span>
+                        <span class="tag is-grey">8</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/RL/">
+                        <span class="tag">RL</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.png" alt="Hexo主题折腾日记(一) 从cactus到icarus" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 Wong Evan&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                <!-- Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                <br> -->
+                <span id="busuanzi_container_site_pv">
+                    Visited by <span id="busuanzi_value_site_uv"></span> users with <span id="busuanzi_value_site_pv"></span> times
+                </span>
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution-NonCommercial 4.0 International" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                        
+                        <i class="fab fa-creative-commons-nc"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="/js/animation.js"></script>
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+    
+    
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<a id="back-to-top" title="Back to Top" href="javascript:;" target="_blank" rel="noopener">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+    <script src="//code.tidio.co/pcdpgnngpleui8os7yv6lt9qgdsnel9a.js" async></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!--
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
